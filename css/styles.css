@@ -5,6 +5,27 @@ body {
     margin: auto;
 }
 
+li {
+    font-size: 18px;
+}
+
+p.aboutme {
+    font-size: 19px;
+}
+
+button.listitem{ 
+    background:none; 
+    border:none; 
+    padding: 0;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(224, 255, 224);
+    transition: 0.2s;
+    /* font-size: px; */
+  }
+
 .sidenav {
     height: 100%;
     width: 220px;
@@ -49,7 +70,7 @@ text-align: left;
 
 @media screen and (max-width:1028px) {
     .material-icons.md-16{
-        background-color: rgb(255, 204, 0);
+        background-color: white;
         border-radius: 100%;
         border: 2px solid #000000;
         padding: 5px 5px;
@@ -65,7 +86,7 @@ text-align: left;
 }
 @media screen and (max-width:800px) and (min-width:450px) {
     .material-icons.md-16{
-        background-color: rgb(255, 204, 0);
+        background-color: white;
         border-radius: 100%;
         border: 2px solid #000000;
         padding: 5px 5px;
@@ -98,8 +119,6 @@ input.radio {width: auto;}
     width: 50px;
     height: 50px;
   }
-
-
 
 .settings {
     /* padding-left: 50px; */
