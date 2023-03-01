@@ -1,5 +1,5 @@
-ids_list = ["ieee", "computational", "fakenews", "livevideo", "adaccess", "bias", "choka", "lang", "camera", "peer", "research", "netsec", "cvta", "cs202", "peerad", "lead", "nvidia", "coursera"]
-pids = ["ieeeP", "computationalP", "fakenewsP", "livevideoP", "adaccessP", "biasP", "chokaP", "langP", "cameraP", "peerP", "researchP", "netsecP", "cvtaP", "cs202P", "peeradP", "leadP", "nvidiaP", "courseraP"]
+ids_list = ["ieee", "computational", "fakenews", "livevideo", "adaccess", "bias", "choka", "lang", "camera", "peer", "research", "netsec", "cvta", "cs202", "peerad", "lead", "nvidia", "coursera", "iot"]
+pids = ["ieeeP", "computationalP", "fakenewsP", "livevideoP", "adaccessP", "biasP", "chokaP", "langP", "cameraP", "peerP", "researchP", "netsecP", "cvtaP", "cs202P", "peeradP", "leadP", "nvidiaP", "courseraP", "iot"]
 
 function coursera() {
     for (var i = 0; i < ids_list.length; i++){
@@ -173,6 +173,18 @@ function choka() {
 function bias() {
     for (var i = 0; i < ids_list.length; i++){
         if(ids_list[i] == "bias"){
+            document.getElementById(pids[i]).style.color = "green";
+            document.getElementById(pids[i]).removeAttribute("hidden");
+        }else{
+            document.getElementById(pids[i]).style.color = "black";
+            document.getElementById(pids[i]).hidden = true;
+        }
+    }
+}
+
+function iot() {
+    for (var i = 0; i < ids_list.length; i++){
+        if(ids_list[i] == "iot"){
             document.getElementById(pids[i]).style.color = "green";
             document.getElementById(pids[i]).removeAttribute("hidden");
         }else{
